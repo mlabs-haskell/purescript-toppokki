@@ -3,9 +3,8 @@
 
 set -e
 
-bower install
-yarn
+npm install
 
-pulp build --include test
+spago build
 
 node ./test/index.mjs
